@@ -16,3 +16,5 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## Screenshot
+
+![ScreenShot](https://raw.github.com/akbarmaulan4/fruitapp/main/ss/ss1.jpeg)
