@@ -75,31 +75,31 @@ class _FruitScreenState extends State<FruitScreen> {
           ],
         ),
       )),
-      bottomNavigationBar: Wrap(
+      bottomNavigationBar: Obx(()=>Wrap(
         children: [
           InkWell(
-            onTap: ()=>controller.getDistinctFruit(
-              onCallBack: (val)=>DialogConstant.messageInfo(
-                context: context,
-                title: 'Informasi',
-                message: val,
-                onClose: ()=>Get.back()
-              )
-            ),
+            onTap: ()=>controller.dataFruits.value.length > 0 ? controller.getDistinctFruit(
+                onCallBack: (val)=>DialogConstant.messageInfo(
+                    context: context,
+                    title: 'Informasi',
+                    message: val,
+                    onClose: ()=>Get.back()
+                )
+            ):null,
             child: Container(
               decoration: ConstantStyle.boxButton(
                   radius: 8,
-                  color: Utils.colorFromHex(ColorCode.bluePrimary)
+                  color: Utils.colorFromHex(controller.dataFruits.value.length > 0 ? ColorCode.bluePrimary:ColorCode.greyPrimary)
               ),
               margin: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
               padding: EdgeInsets.symmetric(vertical: 15),
               child: Center(
-                child: TextMeta('Normal', size: 15, weight: FontWeight.w500,),
+                child: TextMeta('Normal', size: 15, weight: FontWeight.w500),
               ),
             ),
           )
         ],
-      ),
+      )),
     );
   }
 }
