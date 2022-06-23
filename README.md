@@ -17,5 +17,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Screenshot
 
-<img src="https://raw.github.com/akbarmaulan4/fruitapp/main/ss/ss1.jpeg" width="200px"</img><img src="https://raw.github.com/akbarmaulan4/fruitapp/main/ss/ss2.jpeg" width="200px"</img>
+<img src="https://raw.github.com/akbarmaulan4/fruitapp/main/ss/ss1.jpeg" width="200px"</img>
+<img src="https://raw.github.com/akbarmaulan4/fruitapp/main/ss/ss2.jpeg" width="200px"</img>
 <img src="https://raw.github.com/akbarmaulan4/fruitapp/main/ss/ss3.jpeg" width="200px"</img>
